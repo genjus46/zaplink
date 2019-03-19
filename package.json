@@ -1,0 +1,50 @@
+{
+  "name": "zaplink",
+  "version": "0.1.0",
+  "description": "Pooled, robust, WebSocket-based connection",
+  "main": "build/zaplink.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev-build": "webpack --mode development --progress",
+    "dev-watch": "webpack --mode development --progress --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": "false",
+  "author": "Ben Snow <apps@b3nsn0w.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async-unwrap": "^1.0.1",
+    "blob-to-buffer": "^1.2.8",
+    "create-hmac": "^1.1.7",
+    "msgpack-lite": "^0.1.26",
+    "randombytes": "^2.1.0",
+    "scmp": "^2.0.0",
+    "ws": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "core-js": "^2.6.5",
+    "koa": "^2.7.0",
+    "koa-easy-ws": "^1.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-visualizer-plugin": "^0.1.11"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3nsn0w/zaplink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/b3nsn0w/zaplink/issues"
+  },
+  "homepage": "https://github.com/b3nsn0w/zaplink#readme"
+}
