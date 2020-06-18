@@ -1,6 +1,6 @@
 {
   "name": "zaplink",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pooled, robust, WebSocket-based connection",
   "main": "build/zaplink.js",
   "scripts": {
@@ -30,8 +30,8 @@
     "core-js": "^2.6.5",
     "koa": "^2.7.0",
     "koa-easy-ws": "^1.1.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2",
     "webpack-visualizer-plugin": "^0.1.11"
   },
