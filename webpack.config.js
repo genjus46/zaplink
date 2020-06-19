@@ -49,4 +49,4 @@ const web = {
 
 // module.exports = node
 
-module.exports = [ node, web ]
+module.exports = [node, web]
