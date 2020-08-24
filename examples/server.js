@@ -15,7 +15,10 @@ const script = fs.readFileSync(path.resolve(__dirname, '..', 'build', 'zaplink-b
 
 server.on('connect', peer => {
   console.log(`Peer ${peer.key} connected`)
-  peer.addHandler('hello there', () => 'general kenobi')
+  peer.addHandler('hello there', () => {
+    console.log('client said hello')
+    return 'general kenobi'
+  })
 })
 
 server.on('disconnect', peer => {

@@ -222,6 +222,9 @@ Sends a request with the specified name. `data` is forwarded to the handler, and
   attempt can utilize the full timeout, for example a request on default
   settings can take 5000 milliseconds before giving up, not counting the
   reconnection timeout.
+- `broadcast`: If true, sends a message through every available socket instead
+  of just one of them. Should be used with caution, it _will_ trigger the
+  handler on the other side multiple times.
 
 ### `ZaplinkPeer.disconnect()`
 
